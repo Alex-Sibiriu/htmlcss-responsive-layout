@@ -127,6 +127,16 @@ header .nav-desktop {
 }
 
 /****************************************
+    FOOTER
+****************************************/
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 35px 0;
+}
+
+
+/****************************************
     MEDIA QUERY
 ****************************************/
 /* TABLET */
@@ -171,9 +181,14 @@ header .nav-desktop {
   }
 
   /* CTA Section */
-#cta .container {
-  width: 565px;
-}
+  #cta .container {
+    width: 565px;
+  }
+
+  /* Footer */
+  footer .container {
+    width: 420px;
+  }
 }
 
 /* DESKTOP */
