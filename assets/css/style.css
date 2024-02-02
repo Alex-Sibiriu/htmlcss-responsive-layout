@@ -31,6 +31,10 @@
   display: flex;
 }
 
+.f-column {
+  flex-direction: column;
+}
+
 .btn {
   border-radius: 20px;
   text-decoration: none;
@@ -157,7 +161,6 @@ header .nav-desktop {
 
 #functions .first-row,
 #functions .row {
-  flex-direction: column;
   width: 100%;
   gap: 24px;
 }
@@ -166,15 +169,9 @@ header .nav-desktop {
   width: 100%;
 }
 
-#functions .first-row .col:not(:first-child),
-#functions .row .col {
-  text-align: center;
-}
-
 #functions .col .card {
   background-color: #B5DDFF;
   border-radius: 20px;
-  flex-direction: column;
   height: 100%;       
 }
 
@@ -248,12 +245,52 @@ header .nav-desktop {
 }
 
 /* Section Testimonials */
-#testimonials .section-description {
-  text-align: center;
+#testimonials {
+  padding-bottom: 110px;
 }
 
-#testimonials .col {
+#testimonials .section-description h3 {
+  color: var(--primary-color);
+  font-size: 2.3rem;
+  padding: 25px 0;
+}
+
+#testimonials .section-description p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 2rem;
+}
+
+#testimonials .section-description p.section-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#testimonials .card {
   background-color: var(--primary-color);
+  margin-top: 35px;
+  padding: 30px 15px;
+  border-radius: 40px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+#testimonials .card img {
+  object-fit: cover;
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+#testimonials .card .test-name {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 /* Section Benefits */
@@ -336,6 +373,27 @@ footer {
   /* Section Planning */
   #planning h3 {
     font-size: 4rem;
+  }
+
+  /* Testimonials Section */
+  #testimonials .section-description h3 {
+    font-size: 2.5rem;
+  }
+
+  #testimonials .section-description p {
+    padding: 0 14px;
+  }
+  
+  #testimonials .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  #testimonials .card .row .col:last-child {
+    width: 80%;
+    padding-left: 25px;
   }
 
   /* Benefits Section */
@@ -455,6 +513,15 @@ footer {
 
   #planning .card img {
    padding: 0 75px;
+  }
+
+  /* Testimonials Section */
+  #testimonials .section-description h3 {
+    font-size: 2.9rem;
+  }
+
+  #testimonials .section-description p {
+    padding: 0 20px;
   }
 
   /* Benefits Section */
