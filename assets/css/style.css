@@ -49,8 +49,9 @@
 .purple-btn {
   background-color: var(--primary-color);
   color: white;
-  font-size: .85rem;
-  padding: 10px 40px;
+  padding: 10px 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .blue-btn {
@@ -96,8 +97,8 @@ section:nth-child(2n) {
 }
 
 h3 {
-  font-size: 2rem;
-  padding: 50px 0;
+  font-size: 2.3rem;
+  padding-bottom: 50px;
 }
 
 h4 {
@@ -192,10 +193,13 @@ header .nav-desktop {
   padding-bottom: 35px;
 }
 
+#functions .col .card .img-box {
+  justify-content: center;
+}
+
 #functions .col .card img {
   width: 250px;
   margin-top: 40px;
-  margin-left: 15px;
 }
 
 #functions .col .card .btn i {
@@ -251,7 +255,6 @@ header .nav-desktop {
 
 #testimonials .section-description h3 {
   color: var(--primary-color);
-  font-size: 2.3rem;
   padding: 25px 0;
 }
 
@@ -296,10 +299,33 @@ header .nav-desktop {
 /* Section Benefits */
 #benefits .row {
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 #benefits .col {
   width: 100%;
+}
+
+#benefits .card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 30px 40px;
+  color: var(--text-color);
+}
+
+#benefits .card-number,
+#benefits h4 {
+  color: var(--primary-color);
+}
+
+#benefits .card-number {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#benefits .description {
+  line-height: 1.8rem;
+  margin-bottom: 35px;
 }
 
 /* About Us Section */
@@ -370,6 +396,14 @@ footer {
     padding: 10px 51px;
   }
 
+  #functions .col .card .img-box {
+    justify-content: left;
+  }
+  
+  #functions .col .card img {
+    margin-left: 15px;
+  }
+
   /* Section Planning */
   #planning h3 {
     font-size: 4rem;
@@ -398,7 +432,11 @@ footer {
 
   /* Benefits Section */
   #benefits .col {
-    width: 50%;
+    width: calc(50% - 15px);
+  }
+
+  #benefits .card-number {
+    font-size: 4rem;
   }
 
   /* About Us Section */
@@ -526,6 +564,6 @@ footer {
 
   /* Benefits Section */
   #benefits .col {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
   }
 }
