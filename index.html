@@ -24,20 +24,23 @@
     <div class="container d-flex">
 
       <div class="logo">
-        <h1>logo</h1>
+        <a href="#">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
       </div>
 
       <div class="nav-hamburger">
-        <i class="fa-solid fa-bars "></i>
+          <i class="fa-solid fa-bars "></i>
       </div>
 
       <div class="nav-desktop">
         <ul class="d-flex">
-          <li><a href="#">Planning</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a class="btn white-btn" href="#">Get Started</a></li>
+          <!-- Anchor Tag Functioning -->
+          <li><a href="#planning">Planning</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#benefits">Features</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a class="btn white-btn" href="#cta">Get Started</a></li>
         </ul>
       </div>
       
@@ -45,10 +48,9 @@
   </header>
 
   <main>
-
+    <!-- Functions Section -->
     <section id="functions">
       <div class="container d-flex">
-
 
         <!-- First Row -->
         <div class="first-row d-flex">
@@ -61,7 +63,9 @@
                   <i class="fa-brands fa-apple"></i> App Store
                 </a>
               </div>
-              <img src="" alt="">
+              <div class="img-box d-flex">
+                <img src="assets/img/phone.png" alt="phone img">
+              </div>
             </div>
           </div>
 
@@ -93,7 +97,7 @@
             <div class="card">
               <div class="text-box">
                 <i class="fa-solid fa-laptop-code"></i>
-                <h4>Development</h4>
+                <h4>Developement</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem est sapiente accusantium natus harum ratione eius minus cupiditate ducimus.</p>
               </div>
             </div>
@@ -113,20 +117,38 @@
 
       </div>
     </section>
+    <!-- /Functions Section -->
 
+    <!-- Planning Section -->
     <section id="planning">
       <div class="container d-flex">
-        <div class="col debug"></div>
-        <div class="col debug"></div>
+        <div class="col">
+          <img src="assets/img/planning1.png" alt="planning">
+          <h3>Strategic Planning</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ullam suscipit neque doloremque, ducimus voluptatibus incidunt repellendus earum facilis et nesciunt explicabo, vel natus, sapiente culpa eveniet? Expedita quasi minima provident inventore, quas eum.</p>
+        </div>
+        <div class="col">
+          <div class="card text-center">
+            <img src="assets/img/planning2.png" alt="planning2">
+            <h4>App Developement</h4>
+            <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
+            <div class="btn d-flex">
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- /Planning Section -->
 
+    <!-- Testimonials Section -->
     <section id="testimonials">
       <div class="container">
         <div class="section-description">
           <h3>Title</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, repudiandae.</p>
         </div>
+
         <div class="row">
           <div class="col debug"></div>
           <div class="col debug"></div>
@@ -134,7 +156,9 @@
         </div>
       </div>
     </section>
+    <!-- /Testimonials Section -->
 
+    <!-- Benefits Section -->
     <section id="benefits">
       <div class="container">
         <h3>Title</h3>
@@ -148,7 +172,9 @@
         </div>
       </div>
     </section>
+    <!-- Benefits Section -->
 
+    <!-- About Us Section -->
     <section id="about-us">
       <div class="container d-flex">
         <div class="text-box debug">
@@ -158,7 +184,9 @@
         <div class="autor-box debug"></div>
       </div>
     </section>
+    <!-- /About Us Section -->
 
+    <!-- CTA Section -->
     <section id="cta">
       <div class="container">
         <div>Get Started</div>
@@ -169,6 +197,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </div>
     </section>
+    <!-- /CTA Section -->
 
   </main>
 
@@ -178,5 +207,6 @@
       <p><a href="#">link</a> Lorem ipsum dolor sit amet. <a href="#">Boolean</a></p>
     </div>
   </footer>
+
 </body>
 </html>
