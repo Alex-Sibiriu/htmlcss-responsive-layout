@@ -169,7 +169,6 @@ header .nav-desktop {
   gap: 24px;
 }
 
-#functions .first-row,
 #functions .row {
   width: 100%;
   gap: 24px;
@@ -424,6 +423,10 @@ header .nav-desktop {
   margin: 30px 0;
 }
 
+#cta .btn:hover {
+  background-color: rgb(202, 201, 201);
+}
+
 #cta .copyright {
   line-height: normal;
   font-size: .85rem;
@@ -476,21 +479,22 @@ footer a {
     flex-wrap: wrap;
   }
 
-  #functions .first-row,
   #functions .row {
+    width: 100%;
     flex-direction: row;
-  }
-
-  #functions .first-row .col {
-    width: calc(100% / 3 - 12px);
-  }
-  
-  #functions .first-row .col:first-child {
-    width: calc(100% / 3 * 2);
+    flex-wrap: wrap;
   }
 
   #functions .row .col {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 16px);
+  }
+
+  #functions .row .col:first-child {
+    width: calc(100% / 1.5 - 8px);
+  }
+
+  #functions .row .col:nth-child(2) {
+    width: calc(100% / 3 - 16px);
   }
 
   #functions .col .card .text-box p {
