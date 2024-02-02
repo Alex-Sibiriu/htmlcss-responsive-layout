@@ -62,7 +62,7 @@
   letter-spacing: 2px;
 }
 
-.btn i {
+.btn i:not(.fa-arrow-down-long) {
   margin-right: 5px;
 }
 
@@ -220,7 +220,6 @@ header .nav-desktop {
   margin-top: 30px;
 }
 
-/* TODO:Centralizzare line height se possibile */
 #planning .card {
   background-color: white;
   border-radius: 40px;
@@ -243,6 +242,10 @@ header .nav-desktop {
   justify-content: center;
   align-items: center;
   color: black;
+}
+
+#planning .card .btn:hover {
+  color: white;
 }
 
 #planning .col p {
